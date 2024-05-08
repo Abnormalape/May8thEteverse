@@ -220,6 +220,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RefTransform: {fileID: 0}
+  xSpeed: 1
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
