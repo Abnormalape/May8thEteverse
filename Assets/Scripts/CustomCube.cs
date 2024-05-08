@@ -37,6 +37,7 @@ public class CustomCube : MonoBehaviour
         // 단체 주석 ctrl + k -> ctrl + c
 
         RefTransform.Rotate(new Vector3(0f, - vertical * rSpeed * Time.deltaTime, 0f));
+        //RefTransform.rotation = RefTransform.rotation * Quaternion.Euler(0f, horizontal * rSpeed * Time.deltaTime, 0f); -> 쿼터니온으로 돌리기
 
     }
 }
