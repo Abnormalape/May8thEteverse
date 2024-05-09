@@ -7,6 +7,9 @@ using UnityEngine.UIElements;
 public class PLayerMovement : MonoBehaviour
 {
     [SerializeField]
+    private GameManager gameManager;
+
+    [SerializeField]
     float speed;
     Rigidbody rb;
     
@@ -30,6 +33,8 @@ public class PLayerMovement : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log(other.name);
-        if (other.tag == "Item") { Destroy(other.gameObject); }
+        if (other.tag == "Item") { Destroy(other.gameObject);
+            gameManager.AddScore();
+        }
     }
 }
